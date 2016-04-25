@@ -1,0 +1,15 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mDB": {
+    "host": "ds019481.mlab.com",
+    "port": 19481,
+    "database": "qlikdb",
+    "password": "hello",
+    "name": "mDB",
+    "user": "hkit",
+    "connector": "mongodb"
+  }
+}
