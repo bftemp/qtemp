@@ -1,15 +1,15 @@
 var request = require('superagent');
 var expect = require('expect.js');
-var server = require('../server');
+var app = require('../server/server.js');
 
 describe('REST API', function(){
-  var app;
-  before(function () {
-    app = server(3000);
+  var server;
+  before(function (done) {
+    server = app.listen(done);
   });
 
-  after(function () {
-    app.close();
+  after(function (done) {
+    app.close(done);
   });
 
  it ('Checks for the existence of the page', function(done){
